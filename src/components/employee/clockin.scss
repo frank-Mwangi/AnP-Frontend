@@ -1,0 +1,15 @@
+.clockin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  position: fixed;
+  width: 50%;
+  top: 23.5%;
+  left: 50%;
+  z-index: 100;
+  background-color: rgb(156, 141, 141);
+  opacity: 90%;
+  animation: unfold 0.9s forwards;
+  box-shadow: 10px 10px 8px black;
+}

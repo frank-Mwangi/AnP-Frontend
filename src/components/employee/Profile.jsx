@@ -7,28 +7,32 @@ import chevronDown from "../../assets/chevron-down.png";
 import "./profile.scss";
 
 const Profile = () => {
+  const employee = JSON.parse(localStorage.getItem("employeeDetails"));
+
   return (
     <div className="profile">
       <div className="ppic">
-        <img src={avatar} alt="no-avi" />
+        <img src={employee.PhotoURL} alt="no-avi" />
       </div>
       <div className="name">
-        <h3>Ahmed Ali</h3>
-        <p>Junior Software Developer</p>
+        <h3>
+          {employee.FirstName} {employee.LastName}
+        </h3>
+        <p>{employee.Position}</p>
         <button>Edit Profile</button>
       </div>
       <div className="contact">
         <div className="email">
           <img src={email} alt="no-icon" />
-          <p>ahmed@a&p.com</p>
+          <p>{employee.Email}</p>
         </div>
         <div className="tel">
           <img src={telephone} alt="no-icon" />
-          <p>0797685626</p>
+          <p>{employee.Contact}</p>
         </div>
         <div className="address">
           <img src={location} alt="no-icon" />
-          <p>Westlands, Nairobi</p>
+          <p>{employee.Address}</p>
         </div>
       </div>
       <div className="more">
