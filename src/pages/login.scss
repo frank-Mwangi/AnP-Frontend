@@ -1,0 +1,57 @@
+.loginpage {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/reception.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .form {
+    // background-image: url("../assets/Black-bg.jpg");
+    background-color: black;
+    opacity: 80%;
+    border-radius: 16px;
+    width: 40%;
+    height: 70%;
+    box-shadow: 10px 10px 10px 10px lightgrey;
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      padding-top: 20px;
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
+    .login {
+      display: flex;
+      flex-direction: column;
+      //   gap: 20px;
+      width: 80%;
+      height: 60%;
+      h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+      }
+      input {
+        height: 20%;
+        width: 100%;
+        border-radius: 8px;
+        border: none;
+      }
+      .submit {
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}

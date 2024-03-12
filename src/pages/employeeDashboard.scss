@@ -1,0 +1,109 @@
+.dashboard {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: #e9e7e7;
+
+  .navbar {
+    background-color: #fff;
+    height: 10%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    .top {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      //   border: 2px solid red;
+      height: 100%;
+      width: 10%;
+      //   margin-left: 20px;
+      img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+    .navicons {
+      display: flex;
+      gap: 20px;
+      margin-right: 20px;
+      span {
+        display: flex;
+        align-items: center;
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+  .container {
+    display: flex;
+
+    .sidebar {
+      flex: 1;
+      height: 90vh;
+      width: 11vw;
+      position: fixed;
+      //   border: 2px solid salmon;
+      background-color: #fff;
+      margin-top: 10vh;
+
+      .menu {
+        //border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        justify-content: space-around;
+        .overview {
+          display: flex;
+          font-size: 15px;
+          justify-content: space-around;
+          //border: 2px solid red;
+          align-items: center;
+          height: 20%;
+          &:hover {
+            background-color: #3f7594;
+            color: white;
+          }
+          img {
+            height: 30px;
+            width: 30px;
+          }
+        }
+        .clock {
+          display: flex;
+          font-size: 15px;
+          justify-content: space-around;
+          align-items: center;
+          //border: 2px solid red;
+          height: 20%;
+          &:hover {
+            background-color: #3f7594;
+            color: white;
+          }
+          img {
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+    }
+    .main {
+      flex: 8;
+      margin-top: 10vh;
+      margin-left: 11vw;
+
+      .data-container {
+        display: flex;
+        .data {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
