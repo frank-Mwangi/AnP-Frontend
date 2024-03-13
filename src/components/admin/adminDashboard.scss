@@ -96,6 +96,7 @@
       position: fixed;
       .welcome {
         // border: 2px solid green;
+        padding: 8px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -110,6 +111,7 @@
         width: 20%;
         height: 100%;
         // border: 2px solid green;
+        padding: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
