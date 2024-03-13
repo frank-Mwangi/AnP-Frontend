@@ -1,0 +1,46 @@
+.stats {
+  background-color: #fff;
+  padding-left: 2%;
+  h4 {
+    padding-bottom: 1%;
+    color: maroon;
+  }
+  .employees-list {
+    table {
+      display: flex;
+      flex-direction: column;
+      thead {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+        color: white;
+        td {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-left: 1px solid #d9d9d9;
+          width: 25%;
+          height: 100%;
+        }
+      }
+      tr {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid #d9d9d9;
+        height: 40px;
+        td {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-left: 1px solid #d9d9d9;
+          width: 25%;
+          height: 100%;
+        }
+        .first {
+          border-left: none;
+        }
+      }
+    }
+  }
+}

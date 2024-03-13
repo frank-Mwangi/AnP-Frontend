@@ -30,25 +30,28 @@ const Login = () => {
 
   const onSubmit = async (data) => {
     try {
-      LoadingToast();
-      const response = await loginEmployee(data);
+      LoadingToast(true);
+      const response = await loginEmployee(data).unwrap();
       console.log("Response: ", response);
-      if (response) {
-        const { token, employee } = response.data;
+      if (!response.error) {
+        const { token, employee } = response;
         localStorage.setItem("token", token);
         localStorage.setItem("employeeDetails", JSON.stringify(employee));
         LoadingToast(false);
-        SuccessToast("Login Successful");
-        navigate("/dashboard");
+        SuccessToast("Login successful");
+        employee.Admin ? navigate("/admindash") : navigate("/dashboard");
+      } else {
+        console.log(response.error.data.message);
+        ErrorToast(response.error.data.message);
       }
     } catch (error) {
       LoadingToast(false);
-      console.log(error);
-      ErrorToast(error);
+      // console.log(error);
+      ErrorToast(error.data.message);
     }
   };
   if (isLoading) {
-    return <div>LoadingToast();</div>;
+    return <div>{LoadingToast(true)}</div>;
   }
   return (
     <div className="loginpage">

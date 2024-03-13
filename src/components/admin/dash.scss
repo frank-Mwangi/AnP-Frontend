@@ -1,0 +1,57 @@
+.dash {
+  background-color: #fff;
+  //   margin: 2%;
+  border-radius: 8px;
+  h4 {
+    color: maroon;
+    padding-left: 2%;
+    margin-bottom: 1%;
+  }
+  .cards {
+    display: flex;
+    // border: 2px solid salmon;
+    justify-content: space-evenly;
+    margin-bottom: 1%;
+    .total {
+      background-color: #e0eae9;
+    }
+    .average {
+      background-color: #fbedea;
+    }
+    .outstanding {
+      background-color: #eaf3fc;
+    }
+    .card {
+      width: 28%;
+      height: 6rem;
+      //   border: 2px solid green;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 5px 5px 5px 5px gray;
+      padding: 10px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10%;
+      span {
+        display: flex;
+        flex-direction: column;
+        h4 {
+          display: flex;
+          align-items: center;
+          gap: 5%;
+          font-size: 20px;
+          color: gray;
+          h6 {
+            color: gray;
+          }
+        }
+        h6 {
+          font-size: 15px;
+          color: green;
+        }
+      }
+    }
+  }
+}

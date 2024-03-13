@@ -11,7 +11,7 @@ import Profile from "../components/employee/Profile";
 import Punchcard from "../components/employee/Punchcard";
 import Attendance from "../components/employee/Attendance";
 import Payroll from "../components/employee/Payroll";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { createPortal } from "react-dom";
 import Clockin from "../components/employee/Clockin";
