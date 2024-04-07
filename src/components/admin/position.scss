@@ -1,0 +1,43 @@
+.position {
+  border: 1px solid #d9d9d9;
+  margin-left: 2%;
+  border-radius: 16px;
+  //   padding-left: 1%;
+  //   padding-right: 1%;
+  box-shadow: 5px 5px 5px 5px #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  h4 {
+    padding-left: 1%;
+  }
+  button {
+    background-color: #d9d9d9;
+    box-shadow: 1px 1px 1px black;
+    height: 35px;
+    &:hover {
+      background-color: blue;
+      color: white;
+    }
+  }
+  .delete {
+    background-color: red;
+    color: white;
+    margin-right: 1%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 10vh;
+      img {
+        height: 40px;
+        margin-right: 5px;
+      }
+    }
+    // width: 40%;
+  }
+}

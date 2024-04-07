@@ -1,0 +1,134 @@
+.payroll {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  margin-top: 1%;
+  padding-left: 0.5%;
+  box-shadow: 5px 5px 5px 5px #d9d9d9;
+  h4 {
+    color: maroon;
+  }
+  .table {
+    display: flex;
+    width: 100%;
+    .debit {
+      width: 50%;
+      .row {
+        height: 25%;
+        border-bottom: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        display: flex;
+        align-items: center;
+        .numbers {
+          display: flex;
+          align-items: center;
+          width: 60%;
+          gap: 20%;
+          p {
+            color: #423f3f;
+            font-family: Inika;
+          }
+        }
+        .button {
+          // border: 2px solid salmon;
+          width: 40%;
+          // height: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding-right: 10px;
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d9d9d9;
+            width: 45%;
+            height: 35px;
+            box-shadow: 1px 1px 1px black;
+            &:hover {
+              background-color: blue;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .credit {
+      width: 50%;
+      .row {
+        padding: 1%;
+        border-bottom: 1px solid #d9d9d9;
+        display: flex;
+        align-items: center;
+        .numbers {
+          display: flex;
+          align-items: center;
+          width: 60%;
+          gap: 20%;
+          p {
+            color: #423f3f;
+            font-family: Inika;
+          }
+        }
+        .button {
+          // border: 2px solid salmon;
+          width: 40%;
+          // height: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding-right: 10px;
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d9d9d9;
+            width: 45%;
+            height: 35px;
+            box-shadow: 2px 2px 2px black;
+            &:hover {
+              background-color: blue;
+              color: white;
+            }
+          }
+        }
+      }
+      .deductions {
+        display: flex;
+        gap: 20%;
+        border-left: 1px solid #d9d9d9;
+        // border: 2px solid green;
+        .numberss {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          .deduction {
+            width: 100%;
+            display: flex;
+            gap: 10%;
+            align-items: center;
+            h6 {
+              color: red;
+            }
+            p {
+              color: #423f3f;
+              font-family: Inika;
+            }
+          }
+        }
+      }
+    }
+  }
+  .net-pay {
+    border-top: 1px solid #d9d9d9;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    justify-content: center;
+    gap: 2rem;
+
+    color: green;
+    p {
+      color: black;
+      font-family: Inika;
+    }
+  }
+}

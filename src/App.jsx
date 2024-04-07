@@ -6,16 +6,18 @@ import { Router, Routes, Route } from "react-router-dom";
 import Container from "./layout/Container";
 import AdminDashboard from "./components/admin/AdminDashboard";
 import { ToasterContainer } from "./components/Toaster";
+import SingleEmployee from "./pages/SingleEmployee";
 
 const App = () => {
   return (
     <div>
       <ToasterContainer />
+      <SingleEmployee />
       {/* <AdminDashboard /> */}
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/*" element={<Container />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 };
