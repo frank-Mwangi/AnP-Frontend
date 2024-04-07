@@ -1,31 +1,22 @@
 .employee {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 98vw;
-  .nav {
-    height: 10%;
-    width: 100%;
-    // border: 2px solid salmon;
+  width: 100vw;
+  overflow-x: hidden;
+  .container {
+    width: 95%;
+    margin: 0 auto;
     display: flex;
-    padding-left: 1%;
-    // align-items: center;
-    gap: 40%;
-    .logo {
-      height: 100%;
+    flex-direction: column;
+    // border: 2px solid salmon;
+
+    .nav {
+      height: 10%;
+      width: 100%;
       display: flex;
-      align-items: center;
-      img {
-        height: 50px;
-        width: 50px;
-      }
-    }
-    .bio {
-      display: flex;
-      height: 100%;
-      align-items: center;
-      gap: 1rem;
-      .avi {
+      padding: 1% 0;
+      // align-items: center;
+      gap: 40%;
+      .logo {
+        height: 100%;
         display: flex;
         align-items: center;
         img {
@@ -33,9 +24,23 @@
           width: 50px;
         }
       }
-      span {
-        h6 {
-          font-family: Inika;
+      .bio {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        gap: 1rem;
+        .avi {
+          display: flex;
+          align-items: center;
+          img {
+            height: 50px;
+            width: 50px;
+          }
+        }
+        span {
+          h6 {
+            font-family: Inika;
+          }
         }
       }
     }

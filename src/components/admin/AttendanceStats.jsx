@@ -1,5 +1,6 @@
 import React from "react";
 import { Bar, Pie } from "react-chartjs-2";
+import "./attendanceStats.scss";
 
 const AttendanceStats = () => {
   const data = {
@@ -40,8 +41,10 @@ const AttendanceStats = () => {
   return (
     <div className="attendance-stats">
       <h4>Attendance Stats</h4>
-      <Bar data={data} />
-      <Pie data={daysAttendedData} />
+      <div className="charts">
+        <Bar data={data} className="bar-graph" />
+        <Pie data={daysAttendedData} className="pie-chart" />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,20 @@
+.attendance-stats {
+  //   height: 50%;
+  //   padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .charts {
+    display: flex;
+    // flex-direction: column;
+    // border: 2px solid blue;
+    gap: 2rem;
+    .bar-graph {
+      max-width: 50vw;
+      max-height: 50vh;
+    }
+    .pie-chart {
+      max-width: 50vw;
+      max-height: 50vh;
+    }
+  }
+}

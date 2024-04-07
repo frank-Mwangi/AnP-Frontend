@@ -9,23 +9,25 @@ import AttendanceStats from "../components/admin/AttendanceStats";
 const SingleEmployee = () => {
   return (
     <div className="employee">
-      <div className="nav">
-        <div className="logo">
-          <img src={logo} alt="no-icon" />
-        </div>
-        <div className="bio">
-          <div className="avi">
-            <img src={avi} alt="no-avi" />
+      <div className="container">
+        <div className="nav">
+          <div className="logo">
+            <img src={logo} alt="no-icon" />
           </div>
-          <span>
-            <h5>Jon Snow</h5>
-            <h6>08 March, 2024</h6>
-          </span>
+          <div className="bio">
+            <div className="avi">
+              <img src={avi} alt="no-avi" />
+            </div>
+            <span>
+              <h5>Nelius Wanjiru Kabutu</h5>
+              <h6>08 March, 2024</h6>
+            </span>
+          </div>
         </div>
+        <AttendanceStats />
+        <Payables />
+        <Position />
       </div>
-      <AttendanceStats />
-      <Payables />
-      <Position />
     </div>
   );
 };
